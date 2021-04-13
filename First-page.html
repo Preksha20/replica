@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta utf charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Travels- Raahi</title>
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header-container{
+  background-color: lightgrey;
+  display: flex;
+  height: 800px;
+  background-image: url(img.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-direction: column;
+  align-items: center;
+}
+.header-top{
+  display: flex;
+  justify-content: space-around;
+  width: 1600px;
+  height: 70px;
+  align-items: flex-start;
+  padding-top: 20px;
+  background-position: center;
+  color: white;
+  font-family: courier, monospace;
+  font-size: 13px;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+}
+.logo{
+  font-family: "Brush Script MT", "Courier New", monospace;
+  font-size: 60px;
+  color: white;
+}
+.header-links{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+
+
+}
+.link-1, .link-2, .link-3, .link-4{
+  text-decoration: none;
+  font-family: courier, monospace;;
+  color: white;
+
+}
+.Experiences{
+ text-decoration: none;
+}
+.Destinations{
+  margin-left: 60px;
+  text-decoration: none;
+}
+.About-us{
+  margin-left: 90px;
+  text-decoration: none;
+}
+.Contact-us{
+  margin-left: 110px;
+  text-decoration: none;
+}
+
+.search-button{
+  padding-top: 30px;
+}
+.Heading{
+  padding-top: 200px;
+  font-family: "Shippori Mincho B1",sans-serif;
+  align-items: center;
+  font-size: 65px;
+  color: white;
+  line-height: 1em;
+}
+.logos{
+  padding-top:300px;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+.IATA{
+  margin-right: 70px;
+}
+.a-list{
+   width: 50px;
+   height: 50px;
+   margin-right: 40px;
+}
+.luxury-travel{
+  width: 150px;
+  height: 50px;
+  margin-right: 80px;
+}
+.content-1{
+  margin-top: 400px;
+  background-color: #f2f2f2;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+}
+.woods{
+  position: absolute;
+  width: 450px;
+  height: 600px;
+  top: 1000px;
+  left: 160px;
+}
+.write-up{
+  justify-content: center;
+  width: 600px;
+  height: 500px;
+  padding-left: 40px;
+}
+.content1-head, .content2-head{
+  color: #613842 ;
+  font-family: "Shippori Mincho B1",sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+padding-top: 40px;
+}
+.content1-para{
+  color: black;
+  text-overflow: inherit;
+  text-align:left;
+  font-family: 'Hind Siliguri', sans-serif;
+  padding-top: 20px;
+  line-height: 1.7em;
+  letter-spacing: 0.1em;
+
+}
+.meet{
+  color: #613842;
+  font-family: 'Hind Siliguri', sans-serif;
+  line-height: 4em;
+  letter-spacing: 0.1em;
+}
+.content-2{
+  margin-top: 150px;
+  background-color: white;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.content2-head{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+
+}
+.head1{
+  color: #613842 ;
+  font-family: "Shippori Mincho B1",sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  text-align: left;
+}
+.content2-para{
+  color: black;
+  text-overflow: inherit;
+  text-align:left;
+  align-items: center;
+  margin-top: 100px;;
+  font-family: 'Hind Siliguri', sans-serif;
+  line-height: 1.7em;
+  letter-spacing: 0.1em;
+  width: 550px;
+  height: 70px;
+}
+.img-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 200px;
+}
+.photo-grid{
+
+  width: 100%;
+  height: 300px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.box1, .box2, .box3, .box4, .box5{
+  width: 300px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.Content3-container{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 500px;
+  margin-top: 200px;
+  flex: 1;
+
+}
+.img-overlap{
+  margin: 0 auto;
+  max-width: 600px;
+  margin-left: 40px;
+}
+.img-overlap::after{
+  content: '';
+  display: table;
+  clear: both;
+
+}
+.Img-overlap-1{
+  float:left;
+  height: 30%;
+  margin-right: -50%;
+  padding-top: 15%;
+  position: relative;
+
+}
+.Img-overlap-2 {
+  float: right;
+  width: 44%;
+}
+.content3-head{
+   align-items: flex-start;
+   margin-right: 150px;
+   margin-left: 20px;
+   width: 500px;
+
+}
+.experience{
+  color: #613842 ;
+  font-family: "Shippori Mincho B1",sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  text-align: left;
+}
+.content3{
+  olor: black;
+  text-overflow: inherit;
+  text-align:left;
+  align-items: center;
+  margin-top: 50px;
+  font-family: 'Hind Siliguri', sans-serif;
+  line-height: 1.7em;
+  letter-spacing: 0.1em;
+}
+.footer{
+  background-color: #202020;
+  height: 500px;
+  margin-top: 200px;
+  color: white;
+}
+.f-links{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  margin-left: 1%;
+  top: 20%;
+  color: white ;
+  font-family: "Shippori Mincho B1",sans-serif;
+  font-size: 80%;
+}
+.f-experience, .f-destinations{
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: column;
+  font-size: 90%;
+  font-family: "Shippori Mincho B1",sans-serif;
+}
+.f-stack1, .f-stack2{
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: column;
+  font-size: 100%;
+  font-family: "Shippori Mincho B1",sans-serif;
+  padding-top: 10%;
+  line-height: 1.8em;
+}
+.address{
+  text-align: left;
+  line-height: 2.3em;
+}
+
+
+</style>
+
+<body>
+<div class="main-container">
+<div class="header-container">
+  <div class="header-top">
+     <div class="logo">
+       RAAAH!
+     </div>
+     <div class="header-links">
+          <div class="Experiences">
+            <a class="link-1" href="https://www.artofliving.org/in-en">TAILORED EXPERIENCES</a>
+            </div>
+          <div class="Destinations">
+            <a class="link-2" href= "https://www.artofliving.org/in-en">DESTINATIONS</a>
+          </div>
+          <div class="About-us">
+            <a class="link-3" href="https://www.artofliving.org/in-en">ABOUT US</a>
+          </div>
+          <div class="Contact-us">
+            <a class="link-4"href="https://www.artofliving.org/in-en">CONTACT US</a>
+          </div>
+    </div>
+    <div class="search-button">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <i class="fa fa-heart" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="Heading">
+    Adams & Butler <br> <span style="font-size: 50px">Hallmark of Luxury Travel </span>
+  </div>
+  <div class="logos">
+    <img class="IATA" src="IATAlogo.svg">
+    <img class="a-list" src="a-list.svg">
+    <img class="luxury-travel" src="luxury_travel_.png">
+  </div>
+</div>
+ <div class="content-1">
+    <div class="image">
+    <img class="woods" src="woods.JPG" alt="Into the woods">
+  </div>
+  <div class="write-up">
+  <div class="h1" ><h1 class="content1-head">Magical memories, <br> Bespoke experiences</h1> </div>
+  <div class="content1-para">
+     <p class="content1-para">Once you have travelled the voyage never ends. Adams & Butler will open a world of wonders and create magical
+     memories that will stay with you far beyond your travels around. <br> <br>
+    Diverge from the typical tourist destinations in favour of unique, authentic experiences.
+    Experiences designed in the most inspiring surroundings that will be yours, and yours only.
+    Journeys that create memorable moments and Adams & Butler’s bespoke itineraries will make this happen.
+    The wonders of the world are within your reach. </p></div>
+    <a class="meet" href="www.artofliving.org">MEET OUR TEAM </a>
+ </div>
+</div>
+<div class="content-2">
+    <div class="content2-head">
+      <div class="head1">
+        Tailor Made<br> Journeys</div>
+      <div class="imagehead">
+        <img src="elephant.jpg" alt="elephant" height="350px" width="550px">
+      </div>
+    </div>
+    <div class="content2-para"> A&B design itineraries for our clients that others simply cannot,
+      whether around a theme or a private experience. Our team of highly experienced consultants listen,
+       understand and then create a tailor-made journey for you. We believe that travel should not
+       only enrich your perception, understanding, and appreciation of the World, but that it should
+       also allow you to support the local communities you visit. We enable you to explore with purpose,
+        enthusiasm, and a new-found appreciation for the art of travel. Experience diverse cultures;
+        immerse yourself in authentic experiences; take back the moment and reconnect with a joyous
+        attitude towards life.
+    </div>
+</div>
+<div class="img-container">
+ <div class="photo-grid">
+   <div class="box1"><img src="Rishikesh.JPG" width="285px" height="300px" ></div>
+   <div class="box2"> <img src="balis.jpeg" width="285px" height="300px"> </div>
+   <div class="box3"><img src="Aus.JPG" width="285px" height="300px"></div>
+   <div class="box4"><img src="bali.jpeg" width="285px" height="300px"></div>
+   <div class="box5"><img src="beach.JPG" width="285px" height="300px"></div>
+</div>
+</div>
+<div class="Content3-container">
+  <div class="img-overlap">
+    <div class="img-stack Img-overlap-1">
+      <img src="overlap1.jpg" width="80%">
+    </div>
+    <div class="img-stack Img-overlap-2">
+      <img src="overlap2.jpg" >
+    </div>
+  </div>
+  <div class="content3-head">
+    <div class="experience">We are Experience <br> Designers</div>
+      <div class="content3">Our team of highly experienced travel designers will guide you from
+        beginning to end as you embark on a tailor-made journey of distinction, enjoying truly
+        exclusive and authentic cultural experiences. We can fulfil your bucket-list dreams.
+</div>
+</div>
+</div>
+  <div class="footer">
+    <div class="f-links">
+    <div classs="f-links f-experience"> TAILORED EXPERIENCES
+       <div class="f-stack1">
+       <div class="f-experience f-adventure">Adventure</div>
+       <div class="f-experience f-celebration">Celebration</div>
+       <div class="f-experience f-culinary">Culinary</div>
+       <div class="f-experience f-family">Family</div>
+       <div class="f-experience f-ultraluxe">Ultraluxe</div>
+     </div>
+       </div>
+    <div classs="f-links f-destinations "> DESTINATIONS
+      <div class="f-stack2">
+      <div class="f-experience f-adventure">Adventure</div>
+      <div class="f-experience f-celebration">Celebration</div>
+      <div class="f-experience f-culinary">Culinary</div>
+      <div class="f-experience f-family">Family</div>
+      <div class="f-experience f-ultraluxe">Ultraluxe</div>
+    </div>
+  </div>
+    <div classs="f-links f-about-us"> ABOUT US
+     <div class="f-stack2">
+     <div class="f-experience f-adventure">Adventure</div>
+     <div class="f-experience f-celebration">Celebration</div>
+     <div class="f-experience f-culinary">Culinary</div>
+     <div class="f-experience f-family">Family</div>
+     <div class="f-experience f-ultraluxe">Ultraluxe</div>
+    </div>
+    </div>
+  <div class="address">
+        sales@adamsandbutler.com <br>
+        US Toll Free: 1-800-894-5712<br>
+        Australia Toll Free:1-800-764-042<br>
+        Ireland: +353-1-288-9355<br>
+
+  </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>
